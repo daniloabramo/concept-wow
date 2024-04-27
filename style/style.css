@@ -97,4 +97,61 @@ header .sale .buy {
 header .sale .buy img {
   height: 1.5rem;
   width: 1.5rem;
+}
+
+#home {
+  background: rgb(206, 241, 206);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home .elements {
+  width: 60%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  display: flex;
+}
+#home .elements .column1 {
+  width: 33.5%;
+  height: 100%;
+  background: rgb(255, 91, 121);
+  display: flex;
+  flex-direction: column;
+}
+#home .elements .column1 .line1 {
+  height: 50%;
+  background: red;
+}
+#home .elements .column1 .line2 {
+  height: 50%;
+  background: rgb(43, 255, 0);
+}
+#home .elements .column2 {
+  width: 33.5%;
+  height: 100%;
+  background: rgb(173, 241, 176);
+}
+#home .elements .column2 .line1 {
+  height: 15%;
+  background: rgb(17, 0, 255);
+}
+#home .elements .column2 .line2 {
+  height: 60%;
+  background: rgb(255, 0, 212);
+}
+#home .elements .column2 .line3 {
+  height: 25%;
+  background: rgb(85, 0, 71);
+}
+#home .elements .column3 {
+  width: 33.5%;
+  height: 100%;
+  background: rgb(255, 190, 115);
+  display: flex;
+}
+#home .elements .column3 .line1 {
+  height: 50%;
+  width: 33%;
+  background: yellow;
 }/*# sourceMappingURL=style.css.map */

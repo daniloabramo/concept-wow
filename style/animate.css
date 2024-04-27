@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.animated-border {
+  width: 100vw;
+  height: 100vh;
+  border: 100px solid black; /* Espessura inicial da borda */
+  animation: borderAnimation 1s infinite alternate ease-in-out; /* Aplicando a animação */
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-width: 100px; /* Espessura inicial da borda */
+  }
+  100% {
+    border-width: 0px; /* Nova espessura da borda */
+  }
+}/*# sourceMappingURL=animate.css.map */

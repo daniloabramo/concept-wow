@@ -14,6 +14,11 @@
   --title:#303030;
   --button-home:#2F2F2F;
   --button-home-text:white;
+  --benefit-1:#dcf2f0;
+  --benefit-2:#fff687;
+  --benefit-3:#ff9f7f;
+  --benefit-4:#fff0ed;
+  --background-icon:#ff9f7f;
 }
 
 body {
@@ -128,7 +133,7 @@ header .sale .buy img {
   position: relative;
 }
 #home .elements .column1 .line1 h2 {
-  position: fixed;
+  position: absolute;
   z-index: 2;
   font-family: "Inter";
   font-weight: 800;
@@ -206,7 +211,7 @@ header .sale .buy img {
   position: relative;
 }
 #home .elements .column3 .line1 img {
-  position: fixed;
+  position: absolute;
   height: 9rem;
   width: 12rem;
 }
@@ -217,7 +222,7 @@ header .sale .buy img {
   position: relative;
 }
 #home .elements .column3 .line2 img {
-  position: fixed;
+  position: relative;
   z-index: 4;
   height: 11rem;
   width: 10rem;
@@ -228,11 +233,148 @@ header .sale .buy img {
   position: relative;
 }
 #home .elements .column3 .line3 h2 {
-  position: fixed;
+  position: absolute;
   z-index: 2;
   font-family: "Inter";
   font-weight: 800;
   font-size: 11rem;
   color: var(--title);
   transform: rotate(8deg) translate(-4.5rem, -10rem);
+}
+
+#benefits {
+  background: var(--background-nav);
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#benefits article {
+  width: 100%;
+  height: 80%;
+  padding: 3rem 4rem;
+}
+#benefits article h2 {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 6rem;
+  color: var(--title);
+}
+#benefits article .benefits {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1rem;
+}
+#benefits article .benefits .benefit-1 {
+  width: 9.5rem;
+  height: 6rem;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--benefit-1);
+  border-radius: 50%;
+  border: 2px solid var(--border);
+}
+#benefits article .benefits .benefit-1 h3 {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  color: var(--text);
+}
+#benefits article .benefits .benefit-2 {
+  height: 100%;
+  padding: 1rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--benefit-2);
+  border: 2px solid var(--border);
+  transform: translate(0rem, 2rem);
+}
+#benefits article .benefits .benefit-2 h3 {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  color: var(--text);
+}
+#benefits article .benefits .benefit-3 {
+  width: 9.5rem;
+  height: 6rem;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--benefit-3);
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  transform: rotate(-5deg);
+}
+#benefits article .benefits .benefit-3 h3 {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  color: var(--text);
+}
+#benefits article .benefits .benefit-4 {
+  width: 9.5rem;
+  height: 6rem;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--benefit-4);
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  transform: rotate(5deg) translate(0rem, 1rem);
+}
+#benefits article .benefits .benefit-4 h3 {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  color: var(--text);
+}
+#benefits .figure {
+  width: 30%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+#benefits .figure img {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  margin-right: 3rem;
+}
+#benefits .figure .flower {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+#benefits .figure .flower img {
+  position: absolute;
+  z-index: 3;
+  width: 5rem;
+  height: 5rem;
+  margin: 0rem 2.5rem -0.9rem 0rem;
+}
+
+.qualities {
+  height: 20vh;
+  background: var(--benefit-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+}
+.qualities h2 {
+  font-family: "Open Sans";
+}
+.qualities img {
+  height: 5rem;
+  width: 5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -7,11 +7,14 @@
 
 :root {
   --text:black;
+  --highlighted-text:#848484;
   --border:black;
   --background-nav:#fcfcff;
+  --background-products:#2e2e2e;
   --active-link:#DCF2F0;
   --amount:#FD987E;
   --title:#303030;
+  ----highlighted-title:#4B4B4B;
   --button-home:#2F2F2F;
   --button-home-text:white;
   --benefit-1:#dcf2f0;
@@ -28,6 +31,7 @@ body {
 header {
   position: fixed;
   width: 90vw;
+  height: 10vh;
   background: var(--background-nav);
   background: none;
   margin: 0.6rem 5%;
@@ -37,6 +41,7 @@ header {
   border-radius: 5rem;
   border: 2px solid var(--border);
   padding: 0.3rem 0.5rem;
+  z-index: 10;
 }
 header .soon {
   display: flex;
@@ -377,4 +382,171 @@ header .sale .buy img {
 .qualities img {
   height: 5rem;
   width: 5rem;
+}
+
+#products {
+  height: 100vh;
+  width: 100%;
+  background: var(--background-products);
+}
+#products .menu {
+  height: 13vh;
+}
+#products .title {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products .title h2 {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 7.5rem;
+  padding-bottom: 1.5rem;
+  color: var(----highlighted-title);
+}
+#products .products {
+  display: flex;
+  height: 50vh;
+  align-items: center;
+}
+#products .products .left-can {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+#products .products .left-can img {
+  height: 17rem;
+  width: 5rem;
+}
+#products .products .size {
+  width: 25%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#products .products .size .text {
+  width: auto;
+}
+#products .products .size .text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--background-nav);
+}
+#products .products .size .text h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--highlighted-text);
+}
+#products .products .center-can {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products .products .center-can img {
+  height: 80%;
+  width: 11rem;
+}
+#products .products .description {
+  height: 60%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#products .products .description .text {
+  width: 70%;
+}
+#products .products .description .text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--background-nav);
+}
+#products .products .description .text h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--highlighted-text);
+}
+#products .products .right-can {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#products .products .right-can img {
+  height: 15rem;
+  width: 5rem;
+}
+#products .actions {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+}
+#products .actions .left-arrow {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products .actions .left-arrow button {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--background-nav);
+  background: none;
+  cursor: pointer;
+}
+#products .actions .left-arrow button img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+#products .actions .center-button {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products .actions .center-button button {
+  width: 8.5rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  border: none;
+  background: var(--active-link);
+  cursor: pointer;
+}
+#products .actions .center-button button h2 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1rem;
+}
+#products .actions .right-arrow {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products .actions .right-arrow button {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--background-nav);
+  background: none;
+  cursor: pointer;
+}
+#products .actions .right-arrow button img {
+  width: 1.2rem;
+  height: 1.2rem;
+  transform: scaleX(-1);
 }/*# sourceMappingURL=style.css.map */

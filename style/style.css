@@ -11,6 +11,7 @@
   --border:black;
   --background-nav:#fcfcff;
   --background-products:#2e2e2e;
+  --background-feedback:#f3ffff;
   --active-link:#DCF2F0;
   --amount:#FD987E;
   --title:#303030;
@@ -31,7 +32,6 @@ body {
 header {
   height: 14vh;
   width: 100%;
-  background-color: gray;
   position: fixed;
   display: flex;
   align-items: center;
@@ -639,4 +639,112 @@ header .nav .sale .buy img {
 #process .container .right img {
   height: 100%;
   width: 100%;
+}
+
+#feedback {
+  height: 100vh;
+  background: var(--background-feedback);
+}
+#feedback .menu {
+  height: 14vh;
+}
+#feedback .container {
+  display: flex;
+  height: 86vh;
+  width: 100%;
+}
+#feedback .container .figure1 {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+#feedback .container .figure1 img {
+  width: 100%;
+  height: 20rem;
+  margin: 3rem 2rem;
+  z-index: 2;
+}
+#feedback .container .figure2 {
+  width: 30%;
+  height: 100%;
+}
+#feedback .container .figure2 .image-flower {
+  height: 30%;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+#feedback .container .figure2 .image-flower img {
+  width: 6rem;
+  height: 6rem;
+  z-index: 3;
+}
+#feedback .container .figure2 .image {
+  height: 80%;
+  position: relative;
+}
+#feedback .container .figure2 .image img {
+  position: absolute;
+  width: 85%;
+  height: 80%;
+  z-index: 2;
+  transform: translate(0rem, -3rem);
+}
+#feedback .container .feedback {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#feedback .container .feedback .text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0rem 1.5rem;
+}
+#feedback .container .feedback .container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+#feedback .container .feedback .perfil {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+#feedback .container .feedback .perfil img {
+  height: 4rem;
+  width: 4rem;
+  margin: 1.5rem;
+}
+#feedback .container .feedback .perfil .name {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 1rem;
+}
+#feedback .container .action {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/img3.png");
+  background-size: cover;
+}
+#feedback .container .action button {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 10rem;
+  border: 2px solid var(--border);
+  background: var(--background-nav);
+  cursor: pointer;
+}
+#feedback .container .action button img {
+  height: 1.5rem;
+  width: 1.5rem;
+  transform: scaleX(-1);
 }/*# sourceMappingURL=style.css.map */

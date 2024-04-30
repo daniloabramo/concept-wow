@@ -12,6 +12,7 @@
     --border:black;
     --background-nav:#fcfcff;
     --background-products:#2e2e2e;
+    --background-feedback:#f3ffff;
     --active-link:#DCF2F0;
     --amount:#FD987E;
     --title:#303030;
@@ -32,7 +33,7 @@ body{
 header{
     height: 14vh;
     width: 100%;
-    background-color: gray;
+    //background-color: gray;
     position: fixed;
     display: flex;
     align-items: center;
@@ -808,6 +809,144 @@ header{
     }
 }
 
+#feedback{
+    height: 100vh;
+    background: var(--background-feedback);
+
+    .menu{
+        height: 14vh;
+        //background: chocolate;
+    }
+
+    .container{
+        display: flex;
+        height: 86vh;
+        width: 100%;
+
+        .figure1{
+            width: 20%;
+            height: 100%;
+            //background: red;
+            display: flex;
+            align-items: end;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: 20rem;
+                margin: 3rem 2rem;
+                z-index: 2;
+            }
+        }
+
+        .figure2{
+            width: 30%;
+            height: 100%;
+            //background: greenyellow;
+
+            .image-flower{
+                height: 30%;
+                //background: pink;
+                display: flex;
+                align-items: end;
+                position: relative;
+
+
+                img{
+                    width: 6rem;
+                    height: 6rem;
+                    z-index: 3;
+                }
+            }
+
+            .image{
+                height: 80%;
+                //background: blue;
+                position: relative;
+
+                img{
+                    position: absolute;
+                    width: 85%;
+                    height: 80%;
+                    z-index: 2;
+                    transform: translate(0rem, -3rem);
+                }
+            }
+        }
+
+        .feedback{
+            width: 40%;
+            //background: orange;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .text{
+                font-family: 'Open Sans';
+                font-weight: 400;
+                font-size: 1.2rem;
+                margin: 0rem 1.5rem;
+
+            }
+
+            .container{
+                display: flex;
+                flex-direction: column;
+                //background: green;
+                height: auto;
+            }
+
+            .perfil{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                //background: red;
+                img{
+                    height: 4rem;
+                    width: 4rem;
+                    margin: 1.5rem;
+                }
+
+                .name{
+                    font-family: 'Open Sans';
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .action{
+            width: 10%;
+            height: 100%;
+            //background: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('/img/img3.png');
+            background-size: cover;
+
+            button{
+                height: 3.5rem;
+                width: 3.5rem;
+                border-radius: 10rem;
+                border: 2px solid var(--border);
+                background: var(--background-nav);
+                cursor: pointer;
+
+                img{
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+
+
+    }
+    
+}
 
 
 

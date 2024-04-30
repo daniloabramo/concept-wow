@@ -1063,6 +1063,113 @@ header{
 
 }
 
+#blog{
+    background-image: url(/img/background-blog.png);
+    background-size: cover;
+
+    height: 100vh;
+    width: 100%;
+    //background: pink;
+    .menu{
+        height: 14vh;
+        //background: chocolate;
+    }
+
+    .title{
+        height: 20vh;
+        //background: rgb(200, 200, 255);
+        display: flex;
+        align-items: center;
+        margin-left: 4rem;
+        
+        h2{
+            font-family: 'Inter';
+            font-weight: 800;
+            font-size: 7rem;
+            color: var(--background-products);
+        }
+    }
+
+    .container{
+        height:66vh;
+        width: 100%;
+        //background: rgb(255, 235, 198);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 4rem 0rem 2rem;
+
+        .left{
+            padding: 0rem 2rem;
+        }
+
+        .right{
+            padding: 0rem 2rem;
+        }
+
+        .data{
+            width: auto;
+            display: flex;
+
+            .info{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 1rem;
+                padding: 0.6rem 0.8rem;
+                border-radius: 10rem;
+                border: 2px solid var(--border);
+                background: var(--background-nav);
+
+                p{
+                    font-family: 'Open Sans';
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                }
+            }
+
+        }
+
+        h3{
+            margin: 1.5rem 0rem 1rem 0rem;
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 1.6rem;
+        }
+
+        p{
+            font-family: 'Open Sans';
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--border);
+        }
+
+        a{
+            margin: 1rem;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            color: var(--border);
+        }
+
+        .image{
+            width: 100%;
+            height: 10rem;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            //background: red;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+    }
+
+
+}
+
 
 
 

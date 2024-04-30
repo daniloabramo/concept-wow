@@ -29,7 +29,14 @@ body {
 }
 
 header {
+  height: 14vh;
+  width: 100%;
+  background-color: gray;
   position: fixed;
+  display: flex;
+  align-items: center;
+}
+header .nav {
   width: 90vw;
   height: 10vh;
   background: var(--background-nav);
@@ -40,53 +47,54 @@ header {
   align-items: center;
   border-radius: 5rem;
   border: 2px solid var(--border);
-  padding: 0.3rem 0.5rem;
-  z-index: 10;
+  padding: 0rem 0.5rem;
+  z-index: 100;
+  background: yellow;
 }
-header .soon {
+header .nav .soon {
   display: flex;
   align-items: center;
 }
-header .soon img {
+header .nav .soon img {
   width: 2rem;
   height: 2rem;
   margin-right: 0.7rem;
 }
-header .soon h2 {
+header .nav .soon h2 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "Inter";
 }
-header nav ul {
+header .nav nav ul {
   list-style: none;
   display: flex;
 }
-header nav ul li {
+header .nav nav ul li {
   margin: 0rem 1rem;
   font-family: "Inter";
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-header nav ul li a {
+header .nav nav ul li a {
   color: black;
   text-decoration: none;
 }
-header nav ul li .active {
+header .nav nav ul li .active {
   background: var(--active-link);
   padding: 0.4rem 0.8rem;
   border-radius: 4rem;
   border: 2px solid var(--border);
 }
-header .sale {
+header .nav .sale {
   display: flex;
 }
-header .sale .amount {
+header .nav .sale .amount {
   position: relative;
   z-index: 2;
   transform: translateX(1.4rem);
 }
-header .sale .amount p {
+header .nav .sale .amount p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +105,7 @@ header .sale .amount p {
   border-radius: 5rem;
   transform: translate(-0.4rem, 1.8rem);
 }
-header .sale .buy {
+header .nav .sale .buy {
   background-color: var(--active-link);
   display: flex;
   width: 3rem;
@@ -107,9 +115,14 @@ header .sale .buy {
   border-radius: 50%;
   border: 2px solid var(--border);
 }
-header .sale .buy img {
+header .nav .sale .buy img {
   height: 1.5rem;
   width: 1.5rem;
+}
+
+.menu {
+  height: 14vh;
+  background: none;
 }
 
 #home {
@@ -549,4 +562,81 @@ header .sale .buy img {
   width: 1.2rem;
   height: 1.2rem;
   transform: scaleX(-1);
+}
+
+#process {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-nav);
+}
+#process .menu {
+  height: 14vh;
+}
+#process .container {
+  height: 86vh;
+  display: flex;
+}
+#process .container .left {
+  height: 100%;
+  width: 50%;
+}
+#process .container .left .title {
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+#process .container .left .title .title-overlay {
+  position: relative;
+}
+#process .container .left .title .title-overlay h2 {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 7rem;
+  padding-left: 4rem;
+}
+#process .container .left .phases {
+  height: 30%;
+  display: flex;
+}
+#process .container .left .phases .line1 {
+  display: flex;
+  padding: 1rem 4rem;
+  flex-direction: column;
+}
+#process .container .left .phases .line2 {
+  display: flex;
+  padding: 1rem 4rem;
+  flex-direction: column;
+}
+#process .container .left .phases .phase {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#process .container .left .phases .phase img {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.8rem;
+}
+#process .container .left .phases .phase h3 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1rem;
+}
+#process .container .left .image {
+  height: 40%;
+}
+#process .container .left .image img {
+  height: 100%;
+  width: 100%;
+}
+#process .container .right {
+  height: 100%;
+  width: 50%;
+}
+#process .container .right img {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

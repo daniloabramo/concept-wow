@@ -30,105 +30,121 @@ body{
 }
 
 header{
+    height: 14vh;
+    width: 100%;
+    background-color: gray;
     position: fixed;
-    width: 90vw;
-    height: 10vh;
-    background: var(--background-nav);
-    background: none;
-    margin: 0.6rem 5%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-radius: 5rem;
-    border: 2px solid var(--border);
-    padding: 0.3rem 0.5rem;
-    z-index: 10;
 
 
-    .soon{
+    .nav{
+        width: 90vw;
+        height: 10vh;
+        background: var(--background-nav);
+        background: none;
+        margin: 0.6rem 5%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-
-
-        img{
-            width: 2rem;
-            height: 2rem;
-            margin-right:0.7rem;
-        }
-        
-        h2{
-            font-size: 1.5rem;
-            line-height: 2rem;
-            font-family: 'Inter';
-        }
-    }
-
-    nav ul{
-        list-style: none;
-        display: flex;
-        li{
-            //margin: 0rem 3rem;
-            margin: 0rem 1rem;
-            font-family: 'Inter';
-            font-size: 1rem;
-            font-weight: 600;
-            text-transform: uppercase;
-
-            a{
-                color: black;
-                text-decoration: none;
-            }
-
-            .active{
-                background: var(--active-link);
-                padding: 0.4rem 0.8rem;
-                border-radius: 4rem;
-                border: 2px solid var(--border);
-            }
-        }
-    }
-
-    .sale{
-        display: flex;
-        .amount{
-            position: relative;
-            z-index: 2;
-            transform: translateX(1.4rem);
-
-            p{  
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-family: 'Inter';
-                background: var(--amount);
-                height: 1.3rem;
-                width: 1.3rem;
-                border-radius: 5rem;
-                transform: translate(-0.4rem, 1.8rem);
-            }
-
-        }
+        border-radius: 5rem;
+        border: 2px solid var(--border);
+        padding: 0rem 0.5rem;
+        //position: fixed;
+        z-index: 100;
+        background: yellow;
     
-        .buy{
-            background-color: var(--active-link);
+    
+        .soon{
             display: flex;
-            width: 3rem;
-            height: 3rem;
             align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            border: 2px solid var(--border);
-
+    
     
             img{
-                height: 1.5rem;
-                width: 1.5rem;
+                width: 2rem;
+                height: 2rem;
+                margin-right:0.7rem;
             }
-    
+            
+            h2{
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-family: 'Inter';
+            }
         }
+    
+        nav ul{
+            list-style: none;
+            display: flex;
+            li{
+                //margin: 0rem 3rem;
+                margin: 0rem 1rem;
+                font-family: 'Inter';
+                font-size: 1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+    
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+    
+                .active{
+                    background: var(--active-link);
+                    padding: 0.4rem 0.8rem;
+                    border-radius: 4rem;
+                    border: 2px solid var(--border);
+                }
+            }
+        }
+    
+        .sale{
+            display: flex;
+            .amount{
+                position: relative;
+                z-index: 2;
+                transform: translateX(1.4rem);
+    
+                p{  
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Inter';
+                    background: var(--amount);
+                    height: 1.3rem;
+                    width: 1.3rem;
+                    border-radius: 5rem;
+                    transform: translate(-0.4rem, 1.8rem);
+                }
+    
+            }
+        
+            .buy{
+                background-color: var(--active-link);
+                display: flex;
+                width: 3rem;
+                height: 3rem;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 2px solid var(--border);
+    
+        
+                img{
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+        
+            }
+        }
+    
+    
     }
+}
 
-
+.menu{
+    height: 14vh;
+    background: none;
 }
 
 #home{
@@ -688,6 +704,109 @@ header{
     }
 }
 
+#process{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-nav);
+
+    .menu{
+        height: 14vh;
+        //background: chocolate;
+    }
+
+    .container{
+        height: 86vh;
+        //background: green;
+        display: flex;
+
+        .left{
+            height: 100%;
+            width: 50%;
+            //background-color: #fff687;
+
+            .title{
+                height: 30%;
+                //background: red;
+                display: flex;
+                align-items: center;
+
+                .title-overlay{
+                    //background: white;
+                    position: relative;
+
+                    h2{
+                        font-family: 'Inter';
+                        font-weight: 800;
+                        font-size: 7rem;
+                        padding-left: 4rem;
+                    }
+                }
+            }
+
+            .phases{
+                height: 30%;
+                //background: pink;
+                display: flex;
+                
+                .line1{
+                    display: flex;
+                    //background: pink;
+                    padding: 1rem 4rem;
+                    flex-direction: column;
+                }
+    
+                .line2{
+                    display: flex;
+                    //background: orange;
+                    padding: 1rem 4rem;
+                    flex-direction: column;
+                }
+    
+                .phase{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    //background-color: green;
+    
+                    img{
+                        height: 3rem;
+                        width: 3rem;
+                        margin: 0.8rem;
+                    }
+    
+                    h3{
+                        font-family: 'Open Sans';
+                        font-weight: 700;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .image{
+                height: 40%;
+                //background: blue;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .right{
+            height: 100%;
+            width: 50%;
+            //background: purple;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
 
 
 
